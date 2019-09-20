@@ -1,26 +1,18 @@
 <template>
   <Layout>
-    <h1 class="font-sans text-5xl mb-6 text-gray-500 font-light -ml-6">Coming Soon!</h1>
-
-    <p
-      class="font-serif text-base text-gray-800 mb-10"
-    >I am currently working on rebuilding my website. If you would like to le arn more about me, check me out via the links below! Thank you for your patience.</p>
-
-    <p class="home-links">
-      <a
-        href="https://www.linkedin.com/in/kyleritschardrodgers/"
-        target="_blank"
-        rel="noopener"
-      >LinkedIn</a>
-      <a href="https://github.com/kylerits" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <hero></hero>
   </Layout>
 </template>
 
 <script>
+import Hero from "../components/hero.vue";
+
 export default {
   metaInfo: {
     title: "Hello, world!"
+  },
+  components: {
+    Hero
   }
 };
 </script>
