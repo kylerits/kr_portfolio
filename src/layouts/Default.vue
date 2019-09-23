@@ -1,28 +1,27 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <!-- <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>-->
-    </header>
+    <kr-header />
     <slot />
   </div>
 </template>
 
-<static-query>
-query {
-  metaData {
-    siteName
+<script>
+import KrHeader from "~/components/KrHeader.vue";
+
+export default {
+  components: {
+    KrHeader
   }
-}
-</static-query>
+};
+</script>
 
 <style>
 :root {
-  --color-gray: #718096;
-  --color-red: #ec5b62;
-  --color-green: #6b9686;
-  --color-indigo: #3b4a4d;
+  --color-gray: hsl(216, 15%, 52%);
+  --color-red: hsl(357, 79%, 64%);
+  --color-green: hsl(158, 17%, 50%);
+  --color-indigo: hsl(190, 13%, 27%);
+  --color-indigo-25: hsl(190, 13%, 27%, 0.25);
 }
 body {
   @apply bg-indigo-800;

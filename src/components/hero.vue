@@ -25,10 +25,29 @@ export default {
 <style>
 .hero-bg-overlay {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  background: linear-gradient(to bottom, transparent, var(--color-indigo));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background: linear-gradient(
+    to bottom,
+    var(--color-indigo-25),
+    var(--color-indigo)
+  );
 }
+
+@screen md {
+  .hero-bg-overlay {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@screen lg {
+  .hero-bg-overlay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
 .stripe {
   @apply w-full h-full opacity-75;
   background: linear-gradient(
