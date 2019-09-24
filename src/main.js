@@ -13,5 +13,8 @@ export default function (Vue, {
     head.link.push({
       rel: 'stylesheet',
       href: 'https://use.typekit.net/kwg0fbi.css'
+    }, {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap'
     })
 }

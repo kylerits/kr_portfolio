@@ -1,5 +1,6 @@
 <template>
-  <section id="hero" class="relative w-full min-h-part">
+  <section id="hero" class="relative w-full min-h-part flex items-center justify-start">
+    <!-- Background -->
     <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
       <g-image
         src="~/assets/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"
@@ -11,6 +12,13 @@
         <div class="stripe two"></div>
         <div class="stripe three"></div>
         <div class="stripe four"></div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative container">
+      <div class="relative lg:w-2/3 py-6">
+        <slot></slot>
       </div>
     </div>
   </section>
