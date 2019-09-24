@@ -12,7 +12,7 @@ import Hero from "../components/hero.vue";
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Under Construction"
   },
   components: {
     Hero
