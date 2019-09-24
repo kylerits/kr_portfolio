@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <!-- <kr-header /> -->
+    <kr-header />
     <slot />
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
   --color-indigo-25: hsl(190, 13%, 27%, 0.25);
 }
 body {
-  @apply bg-indigo-800 font-serif;
+  @apply bg-indigo-800 font-serif text-indigo-400;
   font-size: 18px;
 }
 
@@ -39,6 +39,13 @@ h6 {
 
 .container {
   @apply mx-auto;
+}
+
+.content p,
+.content ul,
+.content ol,
+.content blockquote {
+  @apply mb-6;
 }
 
 @screen lg {
