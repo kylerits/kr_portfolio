@@ -221,6 +221,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
+                'Cabin',
                 'museo-sans',
                 '-apple-system',
                 'BlinkMacSystemFont',

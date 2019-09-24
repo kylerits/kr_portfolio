@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <hero></hero>
+    <hero>
+      <h1 class="text-6xl text-indigo-400">Under construction.</h1>
+      <p class="text-indigo-400">I'm working to build something that I'm proud of.</p>
+    </hero>
   </Layout>
 </template>
 
@@ -9,7 +12,7 @@ import Hero from "../components/hero.vue";
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Under Construction"
   },
   components: {
     Hero
