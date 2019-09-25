@@ -7,9 +7,10 @@
         </a>
 
         <nav class="flex align-center">
-          <g-link to="/projects" class="inline-block px-3 py-1 hover:text-indigo-500">Projects</g-link>
           <g-link to="/services" class="inline-block px-3 py-1 hover:text-indigo-500">Services</g-link>
           <g-link to="/about" class="inline-block px-3 py-1 hover:text-indigo-500">About</g-link>
+          <g-link to="/projects" class="inline-block px-3 py-1 hover:text-indigo-500">Projects</g-link>
+          <g-link to="/contact" class="inline-block px-3 py-1 hover:text-indigo-500">Contact</g-link>
         </nav>
       </div>
     </div>

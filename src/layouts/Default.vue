@@ -20,11 +20,13 @@ export default {
   --color-gray: hsl(216, 15%, 52%);
   --color-red: hsl(357, 79%, 64%);
   --color-green: hsl(158, 17%, 50%);
+  --color-green-50: hsl(158, 17%, 50%, 0.5);
   --color-indigo: hsl(190, 13%, 27%);
   --color-indigo-25: hsl(190, 13%, 27%, 0.25);
+  --color-indigo-50: hsl(190, 13%, 27%, 0.5);
 }
 body {
-  @apply bg-indigo-800 font-serif text-indigo-400;
+  @apply bg-indigo-900 font-serif text-indigo-400;
   font-size: 18px;
 }
 

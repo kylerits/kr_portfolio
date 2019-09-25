@@ -1,16 +1,15 @@
 <template>
-  <section id="hero" class="relative w-full md:min-h-part flex items-center justify-start">
+  <section id="hero" class="relative w-full flex items-center justify-start">
     <!-- Background -->
     <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
       <g-image
-        src="~/assets/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"
+        src="~/assets/images/conifer-dawn-daylight-2929244.jpg"
         class="object-center object-cover w-full h-full"
         alt="woods"
       />
       <div class="hero-bg-overlay absolute inset-0">
         <div class="stripe one"></div>
         <div class="stripe two"></div>
-        <div class="stripe three"></div>
       </div>
     </div>
 
@@ -23,17 +22,17 @@
   </section>
 </template>
 
-<script scoped>
+<script>
 export default {
-  title: "Hero"
+  title: "Hero Small"
 };
 </script>
 
-<style>
+<style scoped>
 .hero-bg-overlay {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background: var(--color-indigo-50);
   /* background: linear-gradient(
     to bottom,
@@ -66,12 +65,12 @@ export default {
   background: var(--color-green-50);
 }
 .stripe.one {
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 1;
 }
 .stripe.two {
   grid-column-start: 5;
-  grid-row-start: 3;
+  grid-row-start: 2;
 }
 .stripe.three {
   grid-column-start: 2;
