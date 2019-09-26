@@ -7,7 +7,7 @@
         class="object-center object-cover w-full h-full"
         alt="woods"
       />
-      <div class="hero-bg-overlay absolute inset-0">
+      <div class="hero-bg-overlay absolute inset-0 w-full h-full">
         <div class="stripe one"></div>
         <div class="stripe two"></div>
         <div class="stripe three"></div>
@@ -43,7 +43,7 @@ export default {
 }
 
 .stripe {
-  @apply w-full h-full shadow-lg;
+  @apply w-full h-full;
   /* background: linear-gradient(
     to right,
     transparent,

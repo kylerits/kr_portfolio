@@ -8,6 +8,11 @@
     </hero>
 
     <!-- Services Intro -->
+    <section class="py-8 lg:py-16">
+      <div class="container mx-auto">
+        <service-list />
+      </div>
+    </section>
 
     <!-- Experience -->
 
@@ -17,13 +22,15 @@
 
 <script>
 import Hero from "../components/Hero.vue";
+import ServiceList from "~/components/ServiceList";
 
 export default {
   metaInfo: {
     title: "Under Construction"
   },
   components: {
-    Hero
+    Hero,
+    ServiceList
   }
 };
 </script>

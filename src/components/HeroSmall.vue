@@ -42,7 +42,7 @@ export default {
 }
 
 .stripe {
-  @apply w-full h-full shadow-lg;
+  @apply w-full h-full;
   /* background: linear-gradient(
     to right,
     transparent,
