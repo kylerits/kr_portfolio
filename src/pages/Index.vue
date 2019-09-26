@@ -17,12 +17,18 @@
     <!-- Experience -->
 
     <!-- Projects Sample -->
+    <section class="py-8 lg:py-16">
+      <div class="container mx-auto">
+        <project-list />
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 import Hero from "../components/Hero.vue";
 import ServiceList from "~/components/ServiceList";
+import ProjectList from "~/components/ProjectList";
 
 export default {
   metaInfo: {
@@ -30,7 +36,8 @@ export default {
   },
   components: {
     Hero,
-    ServiceList
+    ServiceList,
+    ProjectList
   }
 };
 </script>
