@@ -21,14 +21,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: './content/portfolio',
-        path: '*.md',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
+        path: 'content/portfolio/*.md',
+        typeName: 'Project',
+        route: '/:slug'
       }
     }
   ],
