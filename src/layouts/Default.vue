@@ -26,8 +26,12 @@ export default {
   --color-indigo-50: hsl(190, 13%, 27%, 0.5);
 }
 body {
-  @apply bg-gray-100 font-serif text-gray-800 overflow-x-hidden;
+  @apply bg-indigo-800 font-serif text-gray-800 overflow-x-hidden p-8;
   font-size: 18px;
+}
+
+.layout {
+  @apply relative bg-white;
 }
 
 h1,

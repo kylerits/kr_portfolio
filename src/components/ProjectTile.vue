@@ -1,5 +1,5 @@
 <template>
-  <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-lg">
+  <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl">
     <div class="project-bg absolute inset-0 w-full h-full rounded-lg overflow-hidden">
       <g-image
         src="~/assets/images/black-and-white-clouds-cold-994883.jpg"

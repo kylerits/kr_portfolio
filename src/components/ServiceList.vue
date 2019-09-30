@@ -4,7 +4,7 @@
     <div class="column w-full lg:w-1/2 order-2 lg:order-1 lg:pr-12">
       <h3 class="text-4xl font-sans">Services</h3>
       <p
-        class="description text-gray-600 mb-6"
+        class="description mb-6"
       >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
       <ul class="service-list relative">
@@ -68,6 +68,6 @@ export default {
 .icon-wrap::before {
   content: "";
   @apply w-full h-full bg-green-600 absolute inset-0 opacity-50;
-  transform: translate(15%, -10%) scale(0.9) skewX(-20deg);
+  transform: scale(0.8) skewX(-20deg);
 }
 </style>

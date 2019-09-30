@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative text-indigo-400 w-full flex items-center justify-start">
+  <section id="hero" class="relative w-full flex items-center justify-start">
     <!-- Background -->
     <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
       <g-image
@@ -33,7 +33,8 @@ export default {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background: var(--color-indigo-50);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white);
+  /* background: var(--color-indigo-50); */
   /* background: linear-gradient(
     to bottom,
     var(--color-indigo-25),
@@ -49,7 +50,7 @@ export default {
     var(--color-indigo) 50%,
     transparent
   ); */
-  background: var(--color-indigo-50);
+  background: var(--color-green-50);
   transform: scale(3, 1) skewY(-50deg);
   backdrop-filter: blur(5px);
 }

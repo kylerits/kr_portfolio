@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <hero>
-      <h1 class="text-6xl text-indigo-300">I am a web developer.</h1>
+      <h1 class="text-6xl">I am a web developer.</h1>
       <p
-        class="text-indigo-400 lg:w-4/5"
+        class="lg:w-4/5"
       >My name is Kyle Rodgers and I build websites. That entails taking a project all the way from the planning phase, through design and production, all the way to deployment.</p>
     </hero>
 
