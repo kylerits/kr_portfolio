@@ -1,5 +1,8 @@
 <template>
-  <section id="hero" class="relative w-full md:min-h-part flex items-center justify-start">
+  <section
+    id="hero"
+    class="relative text-indigo-400 w-full md:min-h-part flex items-center justify-start"
+  >
     <!-- Background -->
     <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
       <g-image

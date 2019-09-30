@@ -19,11 +19,29 @@ module.exports = {
       }
     },
     {
+      use: 'gridsome-plugin-purgecss'
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/portfolio/*.md',
         typeName: 'Project',
         route: '/:slug'
+      }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Kyle Rodgers Portfolio',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        serviceWorkerPath: 'service-worker.js',
+        shortName: 'KR Portfolio',
+        themeColor: '#3B4A4D',
+        backgroundColor: '#ffffff',
+        icon: '~/assets/svgs/logo.svg' // must be supplied!
       }
     }
   ],
