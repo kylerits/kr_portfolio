@@ -8,8 +8,8 @@
         alt="woods"
       />
       <div class="hero-bg-overlay absolute inset-0">
-        <div class="stripe one"></div>
-        <div class="stripe two"></div>
+        <!-- <div class="stripe one"></div>
+        <div class="stripe two"></div>-->
       </div>
     </div>
 

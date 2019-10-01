@@ -26,12 +26,12 @@ export default {
   --color-indigo-50: hsl(190, 13%, 27%, 0.5);
 }
 body {
-  @apply bg-indigo-800 font-serif text-gray-800 overflow-x-hidden p-8;
+  @apply relative w-screen bg-indigo-800 font-serif text-gray-800 overflow-y-scroll overflow-x-hidden p-2;
   font-size: 18px;
 }
 
 .layout {
-  @apply relative bg-white;
+  @apply relative max-w-full bg-white overflow-hidden;
 }
 
 h1,
@@ -44,7 +44,7 @@ h6 {
 }
 
 .container {
-  @apply mx-auto;
+  @apply mx-auto p-4;
 }
 
 .content p,
@@ -54,7 +54,20 @@ h6 {
   @apply mb-6;
 }
 
+button:focus {
+  @apply outline-none;
+}
+
+@screen sm {
+  body {
+    @apply p-4;
+  }
+}
+
 @screen lg {
+  body {
+    @apply p-8;
+  }
   .container {
     @apply px-6;
   }

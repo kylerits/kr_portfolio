@@ -11,9 +11,9 @@
         alt="woods"
       />
       <div class="hero-bg-overlay absolute inset-0 w-full h-full">
-        <div class="stripe one"></div>
+        <!-- <div class="stripe one"></div>
         <div class="stripe two"></div>
-        <div class="stripe three"></div>
+        <div class="stripe three"></div>-->
       </div>
     </div>
 
