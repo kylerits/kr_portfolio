@@ -1,11 +1,7 @@
 <template>
   <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl">
     <div class="project-bg absolute inset-0 w-full h-full rounded-lg overflow-hidden">
-      <g-image
-        src="~/assets/images/black-and-white-clouds-cold-994883.jpg"
-        class="object-center object-cover w-full h-full"
-        alt="woods"
-      />
+      <img :src="projectData.cover" class="object-center object-cover w-full h-full" alt="woods" />
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
@@ -39,7 +35,15 @@
           <p class="text-gray-500 text-sm">{{ projectData.client }}</p>
         </div>
         <div class="project-thumbnail-wrap rounded-full p-2 bg-white w-24 h-24 -mt-16">
-          <div class="project-thumbnail w-full h-full rounded-full bg-green-600"></div>
+          <div
+            class="project-thumbnail relative w-full h-full rounded-full bg-green-600 overflow-hidden"
+          >
+            <img
+              :src="projectData.logo"
+              class="object-center object-cover w-full h-full"
+              alt="woods"
+            />
+          </div>
         </div>
       </div>
 
@@ -65,6 +69,11 @@
 
 <script>
 export default {
-  props: ["projectData"]
+  props: ["projectData"],
+  computed: {
+    coverImage() {
+      return this.projectData.cover;
+    }
+  }
 };
 </script>
