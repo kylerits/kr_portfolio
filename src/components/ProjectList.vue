@@ -4,7 +4,7 @@
     <div
       v-for="{ node } in $static.allProject.edges"
       :key="node.id"
-      class="project-wrap w-full md:w-1/2 lg:w-1/3"
+      class="project-wrap w-full md:w-1/2 lg:w-1/3 px-5"
     >
       <project-tile :projectData="node" />
     </div>

@@ -8,23 +8,44 @@
       >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
       <ul class="service-list relative">
-        <li class="service-item relative p-4">
-          <span class="icon-wrap mr-6">
-            <design-icon class="w-10 h-10" />
-          </span>
-          <span class="relative inline-block">Web Design</span>
+        <li class="service-item relative p-4 flex items-start">
+          <div class="mr-6">
+            <div class="icon-wrap">
+              <design-icon class="w-10 h-10" />
+            </div>
+          </div>
+          <div class="relative inline-block">
+            <h3 class="font-sans text-lg mb-1">Web Design</h3>
+            <p
+              class="text-sm text-gray-600"
+            >Laying out your website using modern best practices of UI/UX design.</p>
+          </div>
         </li>
-        <li class="service-item relative p-4">
-          <span class="icon-wrap mr-6">
-            <static-dev-icon class="w-10 h-10" />
-          </span>
-          <span class="relative inline-block">Static Web Development</span>
+        <li class="service-item relative p-4 flex">
+          <div class="mr-6">
+            <div class="icon-wrap">
+              <static-dev-icon class="relative w-10 h-10" />
+            </div>
+          </div>
+          <div class="relative inline-block">
+            <h3 class="font-sans text-lg mb-1">Static Web Development</h3>
+            <p
+              class="text-sm text-gray-600"
+            >Building flatfile or static solution for your website. Fast, efficient, and functional.</p>
+          </div>
         </li>
-        <li class="service-item relative p-4">
-          <span class="icon-wrap mr-6">
-            <web-dev-icon class="w-10 h-10" />
-          </span>
-          <span class="relative inline-block">Web Development and CMS Integration</span>
+        <li class="service-item relative p-4 flex">
+          <div class="mr-6">
+            <div class="icon-wrap">
+              <web-dev-icon class="relative w-10 h-10" />
+            </div>
+          </div>
+          <div class="relative inline-block">
+            <h3 class="font-sans text-lg mb-1">Web Development and CMS Integration</h3>
+            <p
+              class="text-sm text-gray-600"
+            >Control your content with a modern web workflow completely custom built using your favorite CMS.</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -59,7 +80,7 @@ export default {
 
 <style>
 .icon-wrap {
-  @apply relative inline-block;
+  @apply relative block;
 }
 
 .icon-wrap svg {
