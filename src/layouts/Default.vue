@@ -58,6 +58,20 @@ button:focus {
   @apply outline-none;
 }
 
+.button {
+  @apply font-sans font-light tracking-wider inline-block rounded-sm shadow;
+  transition: all 300ms;
+}
+
+.button:hover {
+  @apply shadow-md;
+  transform: translateY(-3px);
+}
+
+.button.button-sm {
+  @apply px-3 py-1 text-sm;
+}
+
 @screen sm {
   body {
     @apply p-4;
