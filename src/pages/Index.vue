@@ -8,7 +8,7 @@
     </hero>
 
     <!-- Services Intro -->
-    <section class="py-8 lg:py-16">
+    <section class="py-8 lg:py-16 lg:px-16">
       <div class="container mx-auto">
         <service-list />
       </div>

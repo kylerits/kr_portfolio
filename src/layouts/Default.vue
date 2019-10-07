@@ -59,7 +59,7 @@ button:focus {
 }
 
 .button {
-  @apply font-sans font-light tracking-wider inline-block rounded-sm shadow;
+  @apply font-sans font-light tracking-wider inline-block py-2 px-5 text-sm rounded-sm shadow;
   transition: all 300ms;
 }
 
