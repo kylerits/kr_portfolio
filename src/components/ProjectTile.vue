@@ -6,7 +6,7 @@
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
         class="w-full absolute bottom-0 text-green-800 opacity-50"
-        style="height: 75%;"
+        style="height: 85%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
       </svg>
@@ -14,7 +14,7 @@
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
         class="w-full absolute bottom-0 text-green-800 opacity-50"
-        style="height: 50%;"
+        style="height: 60%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
       </svg>
@@ -22,7 +22,7 @@
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
         class="w-full absolute bottom-0 text-green-800 opacity-50"
-        style="height: 25%;"
+        style="height: 35%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
       </svg>
@@ -49,7 +49,7 @@
 
       <!-- Description Area -->
       <div class="project-desc-wrap mb-5">
-        <p class="text-gray-600">{{ projectData.excerpt }}</p>
+        <p class="text-gray-600">{{ desc }}</p>
       </div>
 
       <!-- Links -->
@@ -57,7 +57,7 @@
         <g-link
           :to="projectData.path"
           class="button button-sm mr-3 text-green-200 bg-green-700 hover:bg-green-800"
-        >Info</g-link>
+        >Read More</g-link>
         <a
           :href="projectData.link"
           class="button button-sm mr-3 tracking-wider text-red-200 bg-red-600 hover:bg-red-700"
@@ -73,6 +73,12 @@ export default {
   computed: {
     coverImage() {
       return this.projectData.cover;
+    },
+    desc() {
+      if (this.projectData.excerpt.length > 100) {
+        return this.projectData.excerpt.slice(0, 99) + "...";
+      }
+      return this.projectData.excerpt;
     }
   }
 };

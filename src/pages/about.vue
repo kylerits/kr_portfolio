@@ -5,7 +5,7 @@
         <h1 class="text-6xl">My story so far.</h1>
       </hero>
       <section class="container mx-auto relative py-12 lg:py-24">
-        <div class="content lg:w-4/5">
+        <div class="content mx-auto lg:w-2/3 py-12">
           <p>Art, aesthetics, and style will always be subjective. Good design continues to live within these camps, but will always strive for objectivity. A design is developed with a user in mind, therefore forcing the designer to think outside of himself. A website has to be accessible to everyone that has the ability to use a computer, today extending especially to tablet and smart phone users. This portfolio is meant to demonstrate my participation and growth within this industry of designers that is ever changing and improving.</p>
           <p>I really started delving into web design my sophomore year at Indiana University when I took an introductory course in the subject. I was more than familiar with HTML and CSS, and up until this point I felt myself pulled between my original passion of video production and a the much more practical study of informatics. Web design became a way for me to utilize the skills that I was developing while learning programming and data systems, and turning that into something visual.</p>
           <blockquote>

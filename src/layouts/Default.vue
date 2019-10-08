@@ -2,15 +2,18 @@
   <div class="layout">
     <kr-header />
     <slot />
+    <kr-footer />
   </div>
 </template>
 
 <script>
 import KrHeader from "~/components/KrHeader.vue";
+import KrFooter from "~/components/KrFooter.vue";
 
 export default {
   components: {
-    KrHeader
+    KrHeader,
+    KrFooter
   }
 };
 </script>
@@ -69,7 +72,7 @@ h4 {
 .content ul,
 .content ol,
 .content blockquote {
-  @apply mb-6;
+  @apply leading-relaxed mb-6;
 }
 
 button:focus {
