@@ -100,7 +100,7 @@ export default {
 
 .nav-item > .nav-text::before {
   content: "";
-  @apply absolute w-full h-full bg-green-400;
+  @apply absolute w-full h-full bg-indigo-500 opacity-75;
   transform: translateX(-0.75rem) skewX(-20deg);
   z-index: -1;
 }

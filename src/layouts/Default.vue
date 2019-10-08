@@ -25,6 +25,11 @@ export default {
   --color-indigo-25: hsl(190, 13%, 27%, 0.25);
   --color-indigo-50: hsl(190, 13%, 27%, 0.5);
 }
+
+::selection {
+  @apply text-indigo-900 bg-indigo-500;
+}
+
 body {
   @apply relative w-screen bg-indigo-800 font-serif text-gray-800 overflow-y-scroll overflow-x-hidden p-2;
   font-size: 18px;
@@ -41,6 +46,19 @@ h4,
 h5,
 h6 {
   @apply font-sans leading-none mb-4;
+}
+
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h4 {
+  @apply text-2xl;
 }
 
 .container {

@@ -6,7 +6,7 @@
           <g-image
             :src="$page.project.cover"
             class="object-center object-cover w-full h-full"
-            alt="woods"
+            :alt="$page.project.title"
           />
         </template>
         <template v-slot:content>
@@ -15,7 +15,17 @@
         </template>
       </hero>
       <section class="container mx-auto relative py-12 lg:py-24">
-        <div class="content lg:w-4/5" v-html="$page.project.content"></div>
+        <div class="flex flex-wrap">
+          <div class="content lg:w-2/3 lg:pr-12" v-html="$page.project.content"></div>
+          <div class="info lg:w-1/3">
+            <g-image
+              v-if="$page.project.screenshot"
+              :src="$page.project.screenshot"
+              class="block -mt-24 max-w-full h-auto mb-8 shadow-md rounded-lg"
+              :alt="$page.project.title + ' Screenshot'"
+            ></g-image>
+          </div>
+        </div>
       </section>
     </article>
   </Layout>
@@ -33,6 +43,7 @@
           dateEnd
           excerpt
           cover
+          screenshot
           logo
           link
           content
