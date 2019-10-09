@@ -75,6 +75,23 @@ h4 {
   @apply leading-relaxed mb-6;
 }
 
+p > a:not(.button) {
+  @apply relative text-red-600;
+  transform: translateY(0);
+  transition: all 200ms;
+}
+
+p > a:not(.button)::before {
+  content: "";
+  @apply absolute left-0 w-full rounded opacity-25 bg-red-900;
+  height: 0.2rem;
+  bottom: 0.2rem;
+}
+
+p > a:not(.button):hover {
+  @apply text-red-800;
+}
+
 button:focus {
   @apply outline-none;
 }

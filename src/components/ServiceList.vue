@@ -5,7 +5,7 @@
       <h3 class="text-4xl font-sans">Services</h3>
       <p
         class="description mb-6"
-      >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      >I want to be as clear as possible with the freelance services that I offer:</p>
 
       <ul class="service-list relative mb-6">
         <li class="service-item relative p-4 flex items-start">
@@ -50,7 +50,7 @@
       </ul>
 
       <p>
-        <g-link to="/services" class="button bg-green-600 text-green-800">Check out more</g-link>
+        <g-link to="/services" class="button bg-green-600 text-green-800">Learn more</g-link>
       </p>
     </div>
 

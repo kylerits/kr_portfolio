@@ -2,9 +2,12 @@
   <Layout>
     <hero>
       <h1 class="text-6xl">I am a web developer.</h1>
-      <p
-        class="lg:w-4/5"
-      >My name is Kyle Rodgers and I build websites. That entails taking a project all the way from the planning phase, through design and production, all the way to deployment.</p>
+      <p class="lg:w-4/5">
+        My name is Kyle Rodgers. Living and working in Fort Wayne, Indiana, I have a passion for creating dynamic user experiences on the web. I currently freelance part-time and work full-time at
+        <a
+          href="https://gotobig.com/"
+        >Brand Innovation Group</a> building robust, enterprise-level websites.
+      </p>
     </hero>
 
     <!-- Services Intro -->
@@ -32,7 +35,7 @@ import ProjectList from "~/components/ProjectList";
 
 export default {
   metaInfo: {
-    title: "Under Construction"
+    title: "Fort Wayne based Web Developer"
   },
   components: {
     Hero,
