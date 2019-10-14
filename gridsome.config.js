@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Kyle Rodgers',
-  titleTemplate: '%s // Kyle Rodgers Portfolio',
+  titleTemplate: '%s | Kyle Rodgers Portfolio',
   plugins: [{
       use: 'gridsome-plugin-tailwindcss',
       options: {

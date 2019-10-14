@@ -5,7 +5,7 @@
       <h3 class="text-4xl font-sans">Services</h3>
       <p
         class="description mb-6"
-      >I want to be as clear as possible with the freelance services that I offer:</p>
+      >Whether it is jumping in on a project to help meet a deadline, or taking on a full website from the ground up, I am interested in hearing about your project.</p>
 
       <ul class="service-list relative mb-6">
         <li class="service-item relative p-4 flex items-start">

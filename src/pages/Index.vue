@@ -1,12 +1,15 @@
 <template>
   <Layout>
     <hero>
-      <h1 class="text-6xl">I am a web developer.</h1>
+      <h1 class="text-5xl">
+        Living and working in
+        <br />Fort Wayne, Indiana.
+      </h1>
       <p class="lg:w-4/5">
-        My name is Kyle Rodgers. Living and working in Fort Wayne, Indiana, I have a passion for creating dynamic user experiences on the web. I currently freelance part-time and work full-time at
+        My name is Kyle Rodgers. I have a passion for creating dynamic user experiences on the web. I currently work full-time at
         <a
           href="https://gotobig.com/"
-        >Brand Innovation Group</a> building robust, enterprise-level websites.
+        >Brand Innovation Group</a> building robust, enterprise-level websites while woking on freelance projects in my spare time.
       </p>
     </hero>
 
