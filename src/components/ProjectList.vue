@@ -1,6 +1,6 @@
 <template>
   <div class="projects-list relative flex flex-wrap w-full">
-    <!-- Single Project -->
+    <!-- Project Loop -->
     <div
       v-for="{ node } in $static.allProject.edges"
       :key="node.id"
@@ -8,9 +8,6 @@
     >
       <project-tile :projectData="node" />
     </div>
-    <!-- <div v-for="project in projectsTemp" class="project-wrap w-full md:w-1/2 lg:w-1/3">
-      <project-tile :projectData="project" />
-    </div>-->
   </div>
 </template>
 

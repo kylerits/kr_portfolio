@@ -11,6 +11,7 @@
             <p
               class="text-2xl font-sans"
             >My name is Kyle Rodgers. I am a web developer living and working in Fort Wayne, Indiana.</p>
+
             <p>Web development is something that I have dabbled with ever since High School, taking an introductory HTML course in a Computer Applications class. From that point I remained curious, but I was convinced that I would be doing Video Production for the rest of my live. I always gravitated towards editing and simple vidual effects going through every tutorial that Video Copilot had to offer at the time. It was actually in After Effects that I first learned how to write simple functions.</p>
 
             <p>When I got to Indiana University, I enrolled in the School fo Informatics and Computing, hoping to take my knowledge of digital video production and couple it with large data management. Essentially my hope was to never see the sunlight again. I pivoted to web development, however when I took an more in depth course on the subject of Frontend Development my sophomore year. I found that I could take the skills I was learning in programming and data management along with the passion I had for working in a digital medium and build websites.</p>

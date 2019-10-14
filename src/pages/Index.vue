@@ -25,7 +25,21 @@
     <!-- Projects Sample -->
     <section class="py-8 lg:py-16">
       <div class="container mx-auto">
-        <project-list />
+        <div class="section-header flex justify-center mb-12">
+          <div class="w-full lg:w-2/3 text-center">
+            <h2>Projects</h2>
+            <p class="mb-6">Below is a sample of projects that I am proud to have worked on.</p>
+            <p>
+              <span class="underline inline-block w-16 border-b-4 border-indigo-600"></span>
+            </p>
+          </div>
+        </div>
+        <project-list class="mb-12" />
+        <div class="section-footer">
+          <p class="text-center">
+            <g-link to="/projects" class="button bg-indigo-600 text-indigo-800">View More</g-link>
+          </p>
+        </div>
       </div>
     </section>
   </Layout>

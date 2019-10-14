@@ -31,7 +31,7 @@
             <h3 class="font-sans text-lg mb-1">Static Web Development</h3>
             <p
               class="text-sm text-gray-600"
-            >Building flatfile or static solution for your website. Fast, efficient, and functional.</p>
+            >Building a flatfile or static solution for your website. Fast, efficient, and functional.</p>
           </div>
         </li>
         <li class="service-item relative p-4 flex">

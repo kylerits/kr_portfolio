@@ -6,7 +6,8 @@ excerpt: "Through a collaborative effort of design and direction, I headed up th
 slug: big
 client: Brand Innovation Group
 logo: "/images/project/big-brand.jpg"
-cover: "/images/project/fleetwood-cover-shot-woods.jpg"
+cover: "/images/project/universe2.jpg"
+screenshot: "/images/project/screencapture-gotobig.png"
 link: 'https://www.gotobig.com/'
 ---
 
