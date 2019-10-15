@@ -11,14 +11,14 @@
 
       <section class="project-list-large py-8 lg:py-16">
         <div class="container mx-auto">
-          <div class="row flex flex-wrap">
+          <div class="row flex flex-wrap justify-center">
             <div
               class="project-column w-full mb-6"
               v-for="{ node }, index in $page.allProject.edges"
-              :class="[ index == 0 ? 'lg:w-2/3' : 'lg:w-1/3' ]"
+              :class="[ index == 0 ? 'lg:w-2/3 lg:mx-12' : 'lg:w-1/3' ]"
               :key="node.id"
             >
-              <div class="project-wrap px-3 lg:px-6">
+              <div class="project-wrap px-3 lg:px-6 lg:mb-6">
                 <project-tile :projectData="node"></project-tile>
               </div>
             </div>
@@ -60,11 +60,6 @@ export default {
   components: {
     Hero,
     ProjectTile
-  },
-  data() {
-    return {
-      isFirst
-    };
   }
 };
 </script>

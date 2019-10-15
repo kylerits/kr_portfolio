@@ -50,7 +50,7 @@
       </ul>
 
       <p>
-        <g-link to="/services" class="button bg-green-600 text-green-800">Learn more</g-link>
+        <g-link to="/services" class="button bg-green-700 text-green-100">Learn more</g-link>
       </p>
     </div>
 

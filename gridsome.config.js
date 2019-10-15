@@ -7,6 +7,17 @@
 module.exports = {
   siteName: 'Kyle Rodgers',
   titleTemplate: '%s | Kyle Rodgers Portfolio',
+  icon: {
+    favicon: {
+      src: './src/favicon/favicon-32x32.png',
+      sizes: [16, 32],
+    },
+    touchicon: {
+      src: './src/favicon/apple-touch-icon.png',
+      sizes: [76, 152, 120, 167],
+      precomposed: true
+    }
+  },
   plugins: [{
       use: 'gridsome-plugin-tailwindcss',
       options: {
@@ -37,7 +48,7 @@ module.exports = {
         startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: 'manifest.json',
+        manifestPath: 'site.webmanifest',
         serviceWorkerPath: 'service-worker.js',
         shortName: 'KR Portfolio',
         themeColor: '#3B4A4D',

@@ -26,7 +26,7 @@
           <div class="content-wrap lg:w-2/3 lg:pr-12">
             <div class="content mb-6" v-html="$page.project.content"></div>
             <p>
-              <g-link to="/projects" class="button bg-green-600 text-green-800">Back to Projects</g-link>
+              <g-link to="/projects" class="button bg-green-700 text-green-100">Back to Projects</g-link>
             </p>
           </div>
           <div class="info lg:w-1/3">
