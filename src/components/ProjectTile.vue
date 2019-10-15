@@ -1,11 +1,11 @@
 <template>
-  <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl">
+  <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl overflow-hidden">
     <div class="project-bg absolute inset-0 w-full h-full rounded-lg overflow-hidden">
       <img :src="projectData.cover" class="object-center object-cover w-full h-full" alt="woods" />
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
-        class="w-full absolute bottom-0 text-green-800 opacity-50"
+        class="w-full absolute bottom-0 text-indigo-800 opacity-50"
         style="height: 85%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
@@ -13,7 +13,7 @@
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
-        class="w-full absolute bottom-0 text-green-800 opacity-50"
+        class="w-full absolute bottom-0 text-indigo-800 opacity-50"
         style="height: 60%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
@@ -21,7 +21,7 @@
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
-        class="w-full absolute bottom-0 text-green-800 opacity-50"
+        class="w-full absolute bottom-0 text-indigo-800 opacity-50"
         style="height: 35%;"
       >
         <polygon fill="currentColor" points="0,0 100,20 100,100 0,100" />
@@ -75,11 +75,17 @@ export default {
       return this.projectData.cover;
     },
     desc() {
-      if (this.projectData.excerpt.length > 100) {
-        return this.projectData.excerpt.slice(0, 99) + "...";
+      if (this.projectData.excerpt.length > 120) {
+        return this.projectData.excerpt.slice(0, 119) + "...";
       }
       return this.projectData.excerpt;
     }
   }
 };
 </script>
+
+<style>
+.project-bg svg {
+  backdrop-filter: blur(10px);
+}
+</style>

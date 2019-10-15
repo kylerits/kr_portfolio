@@ -13,15 +13,6 @@
       </p>
     </hero>
 
-    <!-- Services Intro -->
-    <section class="py-8 lg:py-16 lg:px-16">
-      <div class="container mx-auto">
-        <service-list />
-      </div>
-    </section>
-
-    <!-- Experience -->
-
     <!-- Projects Sample -->
     <section class="py-8 lg:py-16">
       <div class="container mx-auto">
@@ -40,6 +31,13 @@
             <g-link to="/projects" class="button bg-indigo-700 text-indigo-100">View More</g-link>
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Services Intro -->
+    <section class="py-8 lg:py-16 lg:px-16">
+      <div class="container mx-auto">
+        <service-list />
       </div>
     </section>
   </Layout>

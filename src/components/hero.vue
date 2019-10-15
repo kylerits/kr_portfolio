@@ -37,7 +37,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), white);
+  background: linear-gradient(to bottom, rgba(97, 87, 87, 0.3), white);
 }
 
 .stripe {

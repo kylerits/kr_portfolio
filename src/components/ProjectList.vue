@@ -13,7 +13,7 @@
 
 <static-query>
 query Projects {
-    allProject (sortBy: "title" order: DESC) {
+    allProject (sortBy: "title" order: ASC limit: 3) {
       edges {
         node {
           id
