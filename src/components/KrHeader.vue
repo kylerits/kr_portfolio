@@ -5,8 +5,8 @@
         <a href="/" class="logo-wrap">
           <logo class="w-10 h-10" />
         </a>
-
         <main-nav />
+        <social />
       </div>
     </div>
   </header>
@@ -23,11 +23,13 @@ query {
 <script>
 import Logo from "~/assets/svgs/logo.svg";
 import MainNav from "~/components/MainNav.vue";
+import Social from "~/components/Social.vue";
 
 export default {
   components: {
     Logo,
-    MainNav
+    MainNav,
+    Social
   }
 };
 </script>

@@ -121,7 +121,7 @@ button:focus {
     @apply p-8;
   }
   .container {
-    @apply px-6;
+    @apply px-12;
   }
 }
 </style>

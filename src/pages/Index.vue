@@ -1,8 +1,9 @@
 <template>
   <Layout>
     <hero>
-      <h1 class="text-5xl">
-        Living and working in
+      <h1 class="text-4xl lg:text-5xl">
+        I am a web developer
+        <br />living and working in
         <br />Fort Wayne, Indiana.
       </h1>
       <p class="lg:w-4/5">
