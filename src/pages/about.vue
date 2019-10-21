@@ -4,7 +4,7 @@
       <hero>
         <h1 class="text-6xl">My story so far.</h1>
       </hero>
-      <section class="container mx-auto relative py-12 lg:py-24">
+      <section class="relative container mx-auto relative py-12 lg:py-24">
         <div class="content mx-auto lg:w-1/2 py-12">
           <!-- Who am I? -->
           <div id="bio" class="leading-loose">

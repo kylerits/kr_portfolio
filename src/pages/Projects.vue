@@ -9,7 +9,7 @@
         </p>
       </hero>
 
-      <section class="project-list-large py-8 lg:py-16">
+      <section class="project-list-large relative py-8 lg:py-16">
         <div class="container mx-auto">
           <div class="row flex flex-wrap justify-center">
             <div

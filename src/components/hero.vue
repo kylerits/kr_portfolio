@@ -4,10 +4,14 @@
     class="relative text-indigo-800 w-full md:min-h-part flex items-center justify-start"
   >
     <!-- Background -->
-    <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
+    <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800 overflow-hidden">
       <g-image
         src="~/assets/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"
         class="object-center object-cover w-full h-full"
+        v-rellax="{
+          speed: -3,
+          center: true
+        }"
         alt="woods"
       />
       <div class="hero-bg-overlay absolute inset-0 w-full h-full">
@@ -26,7 +30,7 @@
   </section>
 </template>
 
-<script scoped>
+<script>
 export default {
   title: "Hero"
 };

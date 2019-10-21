@@ -1,10 +1,15 @@
 <template>
   <section id="hero" class="relative w-full flex items-center justify-start">
     <!-- Background -->
-    <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800">
+    <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800 overflow-hidden">
       <g-image
         src="~/assets/images/conifer-dawn-daylight-2929244.jpg"
-        class="object-center object-cover w-full h-full"
+        class="object-center object-cover w-full"
+        style="height: 120%; margin-top: -20%;"
+        v-rellax="{
+          speed: -3,
+          center: true
+        }"
         alt="woods"
       />
       <div class="hero-bg-overlay absolute inset-0">

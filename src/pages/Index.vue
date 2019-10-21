@@ -15,7 +15,7 @@
     </hero>
 
     <!-- Projects Sample -->
-    <section class="py-8 lg:py-16">
+    <section class="relative py-8 lg:py-16">
       <div class="container mx-auto">
         <div class="section-header flex justify-center mb-12">
           <div class="w-full lg:w-2/3 text-center">

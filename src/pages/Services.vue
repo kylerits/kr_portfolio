@@ -7,7 +7,7 @@
       </hero>
 
       <!-- Web Design Section -->
-      <section class="py-8 lg:py-16">
+      <section class="relative py-8 lg:py-16">
         <div class="container mx-auto">
           <div class="flex flex-wrap">
             <!-- Content -->
