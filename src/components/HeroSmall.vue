@@ -5,7 +5,7 @@
       <g-image
         src="~/assets/images/conifer-dawn-daylight-2929244.jpg"
         class="object-center object-cover w-full"
-        style="height: 120%; margin-top: -20%;"
+        style="height: 150%; margin-top: -20%;"
         v-rellax="{
           speed: -3,
           center: true

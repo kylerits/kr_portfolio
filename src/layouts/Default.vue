@@ -83,13 +83,19 @@ p > a:not(.button) {
 
 p > a:not(.button)::before {
   content: "";
-  @apply absolute left-0 w-full rounded opacity-25 bg-red-900;
-  height: 0.2rem;
+  @apply absolute w-0 rounded opacity-50 bg-red-900 border-red-600 border-b;
   bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 300ms;
 }
 
 p > a:not(.button):hover {
   @apply text-red-800;
+}
+
+p > a:not(.button):hover::before {
+  @apply w-full;
 }
 
 button:focus {
