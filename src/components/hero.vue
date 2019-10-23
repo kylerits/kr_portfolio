@@ -7,7 +7,8 @@
     <div class="hero-bg absolute inset-0 w-full h-full bg-indigo-800 overflow-hidden">
       <g-image
         src="~/assets/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"
-        class="object-center object-cover w-full h-full"
+        class="object-center object-cover w-full"
+        style="height: 110%;"
         v-rellax="{
           speed: -3,
           center: true

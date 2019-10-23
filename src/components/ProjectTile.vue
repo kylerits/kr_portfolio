@@ -56,12 +56,12 @@
       <div class="project-links">
         <g-link
           :to="projectData.path"
-          class="button button-sm mr-3 text-green-200 bg-green-700 hover:bg-green-800"
+          class="button button-sm mr-3 text-green-200 bg-green-700 hover:bg-green-800 mb-2"
         >Read More</g-link>
         <a
           :href="projectData.link"
-          class="button button-sm mr-3 tracking-wider text-red-200 bg-red-600 hover:bg-red-700"
-        >Website</a>
+          class="button button-sm mr-3 tracking-wider text-red-200 bg-red-600 hover:bg-red-700 mb-2"
+        >View Now</a>
       </div>
     </div>
   </div>
