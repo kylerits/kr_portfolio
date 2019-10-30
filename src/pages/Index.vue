@@ -3,8 +3,7 @@
     <hero>
       <h1 class="text-4xl lg:text-5xl">
         I am a web developer
-        <br />living and working in
-        <br />Fort Wayne, Indiana.
+        <br />based in Fort Wayne, Indiana.
       </h1>
       <p class="lg:w-4/5">
         My name is Kyle Rodgers. I have a passion for creating dynamic user experiences on the web. I currently work full-time at

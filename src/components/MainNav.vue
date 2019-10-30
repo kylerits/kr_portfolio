@@ -1,5 +1,8 @@
 <template>
-  <div id="mainNav" class="fixed right-0 bottom-0 mr-6 mb-6 lg:mr-12 lg:mb-12 z-50">
+  <div
+    id="mainNav"
+    class="fixed right-0 bottom-0 lg:top-0 mr-6 mb-6 lg:mr-12 lg:mt-16 z-50 flex-col"
+  >
     <transition-group
       name="staggered-fade"
       tag="nav"
@@ -7,24 +10,27 @@
       v-on:before-enter="beforeEnter"
       v-on:enter="enter"
       v-on:leave="leave"
-      class="main-nav absolute right-0 font-bold flex flex-col items-end justify-around"
+      class="main-nav absolute right-0 font-bold flex flex-col items-end justify-around order-1 lg:order-2"
     >
-      <g-link to="/services" class="nav-item" key="services" data-index="0" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Services</span>
+      <g-link to="/" class="nav-item" key="home" data-index="0" v-if="isVisible">
+        <span class="nav-text inline-block relative px-3">Home</span>
       </g-link>
-      <g-link to="/projects" class="nav-item" key="projects" data-index="1" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Projects</span>
-      </g-link>
-      <g-link to="/about" class="nav-item" key="about" data-index="2" v-if="isVisible">
+      <g-link to="/about" class="nav-item" key="about" data-index="1" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">About</span>
       </g-link>
-      <g-link to="/contact" class="nav-item" key="contact" data-index="3" v-if="isVisible">
+      <g-link to="/projects" class="nav-item" key="projects" data-index="2" v-if="isVisible">
+        <span class="nav-text inline-block relative px-3">Projects</span>
+      </g-link>
+      <g-link to="/services" class="nav-item" key="services" data-index="3" v-if="isVisible">
+        <span class="nav-text inline-block relative px-3">Services</span>
+      </g-link>
+      <g-link to="/contact" class="nav-item" key="contact" data-index="4" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">Contact</span>
       </g-link>
     </transition-group>
     <button
       id="showNav"
-      class="relative p-2 w-12 h-12 bg-red-700 text-red-200 rounded-full shadow-lg"
+      class="relative p-2 w-12 h-12 bg-red-700 text-red-200 rounded-full shadow-lg order-2 lg:order-1"
       @click="isVisible = !isVisible"
     >
       <binocular-icon class="w-full h-full" />
@@ -107,7 +113,7 @@ export default {
 
 @screen md {
   .main-nav {
-    height: 80vh;
+    height: 75vh;
   }
 
   .nav-item {
@@ -116,6 +122,13 @@ export default {
 
   .nav-item:hover {
     width: 13rem;
+  }
+}
+
+@screen lg {
+  .main-nav {
+    top: 10%;
+    bottom: auto;
   }
 }
 </style>

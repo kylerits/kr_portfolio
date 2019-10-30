@@ -15,7 +15,10 @@
             </div>
           </div>
           <div class="relative inline-block">
-            <h3 class="font-sans text-lg mb-1">Web Design</h3>
+            <g-link
+              to="/services#web-design"
+              class="title-link block font-sans text-lg mb-1"
+            >Web Design</g-link>
             <p
               class="text-sm text-gray-600"
             >Laying out your website using modern best practices of UI/UX design.</p>
@@ -28,7 +31,10 @@
             </div>
           </div>
           <div class="relative inline-block">
-            <h3 class="font-sans text-lg mb-1">Static Web Development</h3>
+            <g-link
+              to="/services#static-web-development"
+              class="title-link block font-sans text-lg mb-1"
+            >Static Web Development</g-link>
             <p
               class="text-sm text-gray-600"
             >Building a flatfile or static solution for your website. Fast, efficient, and functional.</p>
@@ -41,10 +47,29 @@
             </div>
           </div>
           <div class="relative inline-block">
-            <h3 class="font-sans text-lg mb-1">CMS Integration</h3>
+            <g-link
+              to="/services#cms-integration"
+              class="title-link block font-sans text-lg mb-1"
+            >CMS Integration</g-link>
             <p
               class="text-sm text-gray-600"
             >Control your content with a modern web workflow completely custom built using your favorite CMS.</p>
+          </div>
+        </li>
+        <li class="service-item relative p-4 flex">
+          <div class="mr-6">
+            <div class="icon-wrap">
+              <wrenches-icon class="relative w-10 h-10" />
+            </div>
+          </div>
+          <div class="relative inline-block">
+            <g-link
+              to="/services#web-management"
+              class="title-link font-sans text-lg mb-1"
+            >Web Management</g-link>
+            <p
+              class="text-sm text-gray-600"
+            >Leave your website in good hands so you don't have to worry about managing a live server.</p>
           </div>
         </li>
       </ul>
@@ -76,11 +101,15 @@
 </template>
 
 <script>
+// Illustrations
 import Innovative from "~/assets/svgs/undraw_innovative_b409.svg";
 import WebDeveloper from "~/assets/svgs/undraw_web_developer_p3e5.svg";
+// Icons
 import DesignIcon from "~/assets/svgs/design-tool-pen-station.svg";
 import StaticDevIcon from "~/assets/svgs/optimization-timer-1.svg";
 import WebDevIcon from "~/assets/svgs/programming-flag.svg";
+import WrenchesIcon from "~/assets/svgs/wrench-double.svg";
+// Blobs
 import Blob from "~/assets/svgs/blob-services.svg";
 
 export default {
@@ -90,6 +119,7 @@ export default {
     DesignIcon,
     StaticDevIcon,
     WebDevIcon,
+    WrenchesIcon,
     Blob
   },
   title: "ServiceList"
