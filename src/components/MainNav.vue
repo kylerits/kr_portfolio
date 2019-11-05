@@ -33,16 +33,19 @@
       class="relative p-2 w-12 h-12 bg-red-700 text-red-200 rounded-full shadow-lg order-2 lg:order-1"
       @click="isVisible = !isVisible"
     >
-      <binocular-icon class="w-full h-full" />
+      <signpost-icon class="w-full h-full" />
     </button>
   </div>
 </template>
 
 <script>
 import BinocularIcon from "~/assets/svgs/binocular.svg";
+import SignpostIcon from "~/assets/svgs/signpost-2.svg";
+
 export default {
   components: {
-    BinocularIcon
+    BinocularIcon,
+    SignpostIcon
   },
   data() {
     return {

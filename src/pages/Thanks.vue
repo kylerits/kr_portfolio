@@ -1,15 +1,14 @@
 <template>
   <Layout>
-    <article id="about">
+    <article id="thanks">
       <hero>
-        <h1 class="text-6xl">Get in touch.</h1>
+        <h1 class="text-6xl">Thank you!</h1>
+        <p>I will get back to you as soon as I am able.</p>
       </hero>
       <section class="form-section relative py-8 lg:py-16">
         <div class="container mx-auto">
-          <div class="row flex">
-            <div class="w-full lg:w-1/2">
-              <contact-form />
-            </div>
+          <div class="row flex justify-center">
+            <div class="w-full lg:w-3/4"></div>
           </div>
         </div>
       </section>
@@ -19,12 +18,10 @@
 
 <script>
 import Hero from "~/components/HeroSmall";
-import ContactForm from "~/components/ContactForm";
 
 export default {
   components: {
-    Hero,
-    ContactForm
+    Hero
   }
 };
 </script>
