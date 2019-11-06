@@ -4,6 +4,7 @@
       <hero>
         <template v-slot:cover>
           <g-image
+            v-if="$page.project.cover"
             :src="$page.project.cover"
             class="object-center object-cover w-full h-full"
             :alt="$page.project.title"

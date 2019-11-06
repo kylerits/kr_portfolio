@@ -1,7 +1,12 @@
 <template>
   <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl overflow-hidden">
     <div class="project-bg absolute inset-0 w-full h-full rounded-lg overflow-hidden">
-      <img :src="projectData.cover" class="object-center object-cover w-full h-full" alt="woods" />
+      <img
+        v-if="projectData.cover"
+        :src="projectData.cover"
+        class="object-center object-cover w-full h-full"
+        :alt="projectData.slug"
+      />
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"

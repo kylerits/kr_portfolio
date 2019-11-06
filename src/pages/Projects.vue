@@ -31,7 +31,7 @@
 
 <page-query>
 query Projects {
-    allProject (sortBy: "date" order: ASC) {
+    allProject (sortBy: "dateEnd" order: DESC) {
       edges {
         node {
           id

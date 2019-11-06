@@ -162,6 +162,23 @@
           </div>
         </div>
       </section>
+
+      <!-- Callout -->
+      <section class="relative py-8 lg:py-16">
+        <div class="container">
+          <div class="flex justify-center">
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-center">Would you like to know more?</h2>
+              <p
+                class="text-center mb-6"
+              >I'm sure you have plenty of questions and I am more than happy to answer them.</p>
+              <p class="text-center">
+                <g-link to="/contact" class="button bg-red-600 text-red-100">Get in Touch</g-link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
   </Layout>
 </template>

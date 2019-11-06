@@ -16,7 +16,7 @@
       <p class="mb-6">
         <label
           for="name"
-          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 pl-5 mb-1"
+          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 mb-1"
         >Your Name:</label>
         <input
           type="text"
@@ -26,10 +26,23 @@
           autocomplete="off"
         />
       </p>
+      <p class="mb-6">
+        <label
+          for="email"
+          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 mb-1"
+        >Your Email:</label>
+        <input
+          type="email"
+          name="email"
+          class="block w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
+          placeholder="johnd@example.com"
+          autocomplete="off"
+        />
+      </p>
       <div class="mb-6">
         <label
           for="services"
-          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 pl-5 mb-1"
+          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 mb-1"
         >Select Interest:</label>
         <div
           class="selection-wrap relative w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
@@ -50,17 +63,17 @@
       <p class="mb-6">
         <label
           for="name"
-          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 pl-5 mb-1"
+          class="block font-sans text-xs uppercase tracking-widest text-green-600 opacity-50 mb-1"
         >How can I help:</label>
         <textarea
           name="message"
           class="block w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
-          placeholder="Gosh, I sure wish I had my very own website."
+          placeholder="I have a couple of questions..."
           autocomplete="off"
         ></textarea>
       </p>
       <p>
-        <button type="submit" class="button bg-red-700 text-red-100 ml-5">Send</button>
+        <button type="submit" class="button bg-red-700 text-red-100">Send</button>
       </p>
     </form>
   </div>
