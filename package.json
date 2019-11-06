@@ -8,8 +8,13 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.4",
     "gridsome": "^0.7.5",
+    "gridsome-plugin-purgecss": "^1.0.12",
+    "gridsome-plugin-pwa": "^0.0.8",
     "gridsome-plugin-tailwindcss": "^2.2.25",
+    "velocity-animate": "^1.5.2",
+    "vue-rellax": "^0.1.0",
     "vue-svg-loader": "^0.12.0"
   }
 }

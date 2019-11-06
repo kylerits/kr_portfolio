@@ -6,6 +6,18 @@
 
 module.exports = {
   siteName: 'Kyle Rodgers',
+  titleTemplate: '%s | Kyle Rodgers Portfolio',
+  icon: {
+    favicon: {
+      src: './src/favicon/favicon-32x32.png',
+      sizes: [16, 32],
+    },
+    touchicon: {
+      src: './src/favicon/apple-touch-icon.png',
+      sizes: [76, 152, 120, 167],
+      precomposed: true
+    }
+  },
   plugins: [{
       use: 'gridsome-plugin-tailwindcss',
       options: {
@@ -19,16 +31,29 @@ module.exports = {
       }
     },
     {
+      use: 'gridsome-plugin-purgecss'
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: './content/portfolio',
-        path: '*.md',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
+        path: 'content/portfolio/*.md',
+        typeName: 'Project',
+        route: '/:slug'
+      }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Kyle Rodgers Portfolio',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'site.webmanifest',
+        serviceWorkerPath: 'service-worker.js',
+        shortName: 'KR Portfolio',
+        themeColor: '#3B4A4D',
+        backgroundColor: '#ffffff',
+        icon: '~/assets/svgs/logo.svg' // must be supplied!
       }
     }
   ],
