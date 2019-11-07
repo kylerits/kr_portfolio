@@ -1,6 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-import Velocity from 'velocity-animate'
+// import Velocity from 'velocity-animate'
 import VueRellax from 'vue-rellax'
 
 import DefaultLayout from '~/layouts/Default.vue'
@@ -12,6 +12,7 @@ export default function (Vue, {
 }) {
   // Load global libraries
   Vue.use(VueRellax)
+  // Vue.prototype.$velocity = Velocity
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout),
