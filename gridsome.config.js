@@ -48,12 +48,12 @@ module.exports = {
         startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: 'site.webmanifest',
+        manifestPath: 'manifest.json',
         serviceWorkerPath: 'service-worker.js',
         shortName: 'KR Portfolio',
         themeColor: '#3B4A4D',
         backgroundColor: '#ffffff',
-        icon: '~/assets/svgs/logo.svg' // must be supplied!
+        icon: 'static/favicon.png' // must be supplied!
       }
     }
   ],

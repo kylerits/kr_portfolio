@@ -73,7 +73,7 @@
         ></textarea>
       </p>
       <p>
-        <button type="submit" class="button bg-red-700 text-red-100">Send</button>
+        <button type="submit" name="submit form" class="button bg-red-700 text-red-100">Send</button>
       </p>
     </form>
   </div>
