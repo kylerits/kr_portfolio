@@ -6,7 +6,6 @@
     <transition-group
       name="staggered-fade"
       tag="nav"
-      v-bind:css="false"
       v-on:before-enter="beforeEnter"
       v-on:enter="enter"
       v-on:leave="leave"

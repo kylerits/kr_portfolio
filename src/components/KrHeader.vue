@@ -22,7 +22,7 @@ query {
 
 <script>
 import Logo from "~/assets/svgs/logo.svg";
-import MainNav from "~/components/MainNav.vue";
+import MainNav from "~/components/MainNavToo.vue";
 import Social from "~/components/Social.vue";
 
 export default {
