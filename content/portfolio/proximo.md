@@ -1,5 +1,5 @@
 ---
-title: Proximo Website
+title: Proximo
 dateStart: 2018-04
 dateEnd: 2018-09
 excerpt: "This project was an online menu and reservation hub for the new Downtown Fort Wayne restaurant Proximo. Integrated with OpenTable's API, users can make reservation through the website, view delicious menu items, and purchase gift cards."
