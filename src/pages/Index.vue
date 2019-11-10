@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Hero from "~/components/Hero";
+import Hero from "~/components/hero";
 import ServiceList from "~/components/ServiceList";
 import ProjectList from "~/components/ProjectList";
 
