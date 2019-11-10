@@ -36,6 +36,15 @@ import ContactForm from "~/components/ContactForm";
 import Blob from "~/assets/svgs/blob-static.svg";
 
 export default {
+  metaInfo: {
+    title: "Get in touch.",
+    meta: [
+      {
+        name: "description",
+        content: "Let me know if you have any questions."
+      }
+    ]
+  },
   components: {
     Hero,
     ContactForm,

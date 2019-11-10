@@ -50,7 +50,14 @@ import ProjectList from "~/components/ProjectList";
 
 export default {
   metaInfo: {
-    title: "Fort Wayne based Web Developer"
+    title: "I am a Fort Wayne based Web Developer.",
+    meta: [
+      {
+        name: "description",
+        content:
+          "I have a passion for creating dynamic user experiences on the web."
+      }
+    ]
   },
   components: {
     Hero,

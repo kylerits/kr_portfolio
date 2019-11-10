@@ -20,6 +20,15 @@
 import Hero from "~/components/HeroSmall";
 
 export default {
+  metaInfo: {
+    title: "Thank You.",
+    meta: [
+      {
+        name: "description",
+        content: "I will get back to you as soon as I am able."
+      }
+    ]
+  },
   components: {
     Hero
   }

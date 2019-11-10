@@ -57,6 +57,16 @@ import Hero from "../components/HeroSmall";
 import ProjectTile from "../components/ProjectTile";
 
 export default {
+  metaInfo: {
+    title: "Projects.",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Having worked as a web developer for the past 5 years I have built up a portfolio of projects that I am proud to have been a part of."
+      }
+    ]
+  },
   components: {
     Hero,
     ProjectTile
