@@ -198,6 +198,16 @@ import Selecting from "~/assets/svgs/undraw_selecting_1lx3.svg";
 import Management from "~/assets/svgs/undraw_safe_bnk7.svg";
 
 export default {
+  metaInfo: {
+    title: "Services.",
+    meta: [
+      {
+        name: "description",
+        content:
+          "I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community."
+      }
+    ]
+  },
   components: {
     Hero,
     BlobDesign,

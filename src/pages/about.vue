@@ -42,7 +42,14 @@ import Hero from "../components/HeroSmall";
 
 export default {
   metaInfo: {
-    title: "My story so far."
+    title: "My story so far.",
+    meta: [
+      {
+        name: "description",
+        content:
+          "I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume."
+      }
+    ]
   },
   components: {
     Hero

@@ -6,9 +6,6 @@
     <transition-group
       name="staggered-fade"
       tag="nav"
-      v-on:before-enter="beforeEnter"
-      v-on:enter="enter"
-      v-on:leave="leave"
       class="main-nav absolute right-0 font-bold flex flex-col items-end justify-around order-1 lg:order-2"
     >
       <g-link to="/" class="nav-item" key="home" data-index="0" v-if="isVisible">
@@ -53,31 +50,14 @@ export default {
     return {
       isVisible: false
     };
-  },
-  methods: {
-    beforeEnter: function(el) {
-      el.style.opacity = 0;
-      el.style.translateX = "20px";
-    },
-    enter: function(el, done) {
-      var delay = el.dataset.index * 100;
-      document.documentElement.style.setProperty("--delay", delay);
-      el.style.opacity = 1;
-      el.style.translateX = "0px";
-    },
-    leave: function(el, done) {
-      var delay = el.dataset.index * 50;
-      document.documentElement.style.setProperty("--delay", delay);
-      el.style.opacity = 0;
-      el.style.translateX = "20px";
-    }
   }
 };
 </script>
 
 <style>
 :root {
-  --delay: 0;
+  --enter-delay: 0ms;
+  --leave-delay: 0ms;
 }
 
 .main-nav {
@@ -88,7 +68,7 @@ export default {
 .nav-item {
   @apply relative block text-lg text-indigo-900;
   width: 8rem;
-  transition: all 300ms var(--delay);
+  transition: all 300ms;
 }
 
 .nav-item:hover {
@@ -129,5 +109,18 @@ export default {
     top: 10%;
     bottom: auto;
   }
+}
+
+/* Transitions */
+.staggered-fade-enter-active {
+  transition: all 300ms;
+}
+.staggered-fade-leave-active {
+  transition: all 300ms;
+}
+.staggered-fade-enter,
+.staggered-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>
