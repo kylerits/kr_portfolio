@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Hero from "../components/HeroSmall";
+import Hero from "~/components/HeroSmall";
 
 export default {
   metaInfo: {
