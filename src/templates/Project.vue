@@ -24,7 +24,7 @@
       </hero>
       <section class="container mx-auto relative py-12 lg:py-24">
         <div class="flex flex-wrap">
-          <div class="content-wrap lg:w-2/3 lg:pr-12">
+          <div class="content-wrap lg:w-2/3 lg:pr-12 mb-12">
             <div class="content mb-6" v-html="$page.project.content"></div>
             <p>
               <g-link to="/projects" class="button bg-green-700 text-green-100">Back to Projects</g-link>

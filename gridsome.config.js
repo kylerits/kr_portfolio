@@ -55,6 +55,12 @@ module.exports = {
         backgroundColor: '#ffffff',
         icon: 'static/favicon.png' // must be supplied!
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-151944939-1'
+      }
     }
   ],
   chainWebpack: config => {
