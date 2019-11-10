@@ -1,5 +1,5 @@
 ---
-title: BIG Website
+title: BIG
 dateStart: 2018-11
 dateEnd: 2019-02
 excerpt: "Through a collaborative effort of design and direction, I headed up the development of BIG's primary website. The project took full advantage of current web development technology, utilizing Vue for full PWA capabilities."

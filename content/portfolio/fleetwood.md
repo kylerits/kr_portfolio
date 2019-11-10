@@ -1,5 +1,5 @@
 ---
-title: Fleetwood RV Website
+title: Fleetwood RV
 dateStart: 2019-07
 dateEnd: 2019-09
 excerpt: "I was part of a team that developed the website for Fleetwood RV as part of a larger web project with Rev Group. The purpose of the site is to showcase their Coaches and provide information for customers and distributors alike. The most robust feature of the site is an RV builder tool that allows the user to put together exactly what kind of vehicle they would want to purchase."
