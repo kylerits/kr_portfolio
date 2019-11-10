@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Hero from "~/components/Hero.vue";
+import Hero from "~/components/Hero";
 import ServiceList from "~/components/ServiceList";
 import ProjectList from "~/components/ProjectList";
 

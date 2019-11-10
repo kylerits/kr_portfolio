@@ -53,8 +53,8 @@ query Projects {
 </page-query>
 
 <script>
-import Hero from "../components/HeroSmall";
-import ProjectTile from "../components/ProjectTile";
+import Hero from "~/components/HeroSmall";
+import ProjectTile from "~/components/ProjectTile";
 
 export default {
   metaInfo: {
