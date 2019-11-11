@@ -7,7 +7,7 @@ slug: proximo
 client: Proximo
 logo: "/images/project/proximo-brand.jpg"
 cover: "/images/project/proximo-interior.jpeg"
-screenshot: "/images/project/proximo-screenshot.png"
+screenshot: "/images/project/proximo-screenshot.jpg"
 link: "https://proximofw.com/"
 ---
 
