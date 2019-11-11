@@ -9,7 +9,7 @@
         My name is Kyle Rodgers. I have a passion for creating dynamic user experiences on the web. I currently work full-time at
         <a
           href="https://gotobig.com/"
-        >Brand Innovation Group</a> building robust, enterprise-level websites while woking on freelance projects in my spare time.
+        >Brand Innovation Group</a> building robust, enterprise-level websites while working on freelance projects in my spare time.
       </p>
     </hero>
 
