@@ -2,7 +2,7 @@
   <header class="absolute left-0 w-full z-50">
     <div class="container mx-auto">
       <div class="flex justify-between align-center py-2 text-indigo-900">
-        <a href="/" class="logo-wrap">
+        <a href="/" class="logo-wrap" aria-label="Navigate to Home Page">
           <logo class="w-10 h-10" />
         </a>
         <main-nav />

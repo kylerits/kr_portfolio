@@ -26,7 +26,7 @@
     </transition-group>
     <button
       id="showNav"
-      name="show navigation"
+      title="Show Navigation Button"
       class="relative p-2 w-12 h-12 bg-red-700 text-red-200 rounded-full shadow-lg order-2 lg:order-1"
       @click="isVisible = !isVisible"
     >

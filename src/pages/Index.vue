@@ -28,7 +28,7 @@
         <project-list class="mb-12" />
         <div class="section-footer">
           <p class="text-center">
-            <g-link to="/projects" class="button bg-indigo-700 text-indigo-100">View More</g-link>
+            <g-link to="/projects" class="button bg-indigo-700 text-white">View More</g-link>
           </p>
         </div>
       </div>
