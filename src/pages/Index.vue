@@ -9,7 +9,7 @@
         My name is Kyle Rodgers. I have a passion for creating dynamic user experiences on the web. I currently work full-time at
         <a
           href="https://gotobig.com/"
-        >Brand Innovation Group</a> building robust, enterprise-level websites while woking on freelance projects in my spare time.
+        >Brand Innovation Group</a> building robust, enterprise-level websites while working on freelance projects in my spare time.
       </p>
     </hero>
 
@@ -28,7 +28,7 @@
         <project-list class="mb-12" />
         <div class="section-footer">
           <p class="text-center">
-            <g-link to="/projects" class="button bg-indigo-700 text-indigo-100">View More</g-link>
+            <g-link to="/projects" class="button bg-indigo-700 text-white">View More</g-link>
           </p>
         </div>
       </div>

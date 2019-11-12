@@ -6,7 +6,22 @@
       :key="node.id"
       class="project-wrap w-full md:w-1/2 lg:w-1/3 px-5 mb-6"
     >
-      <project-tile :projectData="node" />
+      <project-tile :projectData="node">
+        <template v-slot:cover>
+          <g-image
+            :src="node.cover"
+            class="object-center object-cover w-full h-full"
+            :alt="node.slug"
+          />
+        </template>
+        <template v-slot:logo>
+          <g-image
+            :src="node.logo"
+            class="object-center object-cover w-full h-full"
+            :alt="node.title + ' Logo'"
+          />
+        </template>
+      </project-tile>
     </div>
   </div>
 </template>

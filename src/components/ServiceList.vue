@@ -20,7 +20,7 @@
               class="title-link block font-sans text-lg mb-1"
             >Web Design</g-link>
             <p
-              class="text-sm text-gray-600"
+              class="text-sm text-gray-700"
             >Laying out your website using modern best practices of UI/UX design.</p>
           </div>
         </li>
@@ -36,7 +36,7 @@
               class="title-link block font-sans text-lg mb-1"
             >Static Web Development</g-link>
             <p
-              class="text-sm text-gray-600"
+              class="text-sm text-gray-700"
             >Building a flatfile or static solution for your website. Fast, efficient, and functional.</p>
           </div>
         </li>
@@ -52,7 +52,7 @@
               class="title-link block font-sans text-lg mb-1"
             >CMS Integration</g-link>
             <p
-              class="text-sm text-gray-600"
+              class="text-sm text-gray-700"
             >Control your content with a modern web workflow completely custom built using your favorite CMS.</p>
           </div>
         </li>
@@ -68,14 +68,14 @@
               class="title-link font-sans text-lg mb-1"
             >Web Management</g-link>
             <p
-              class="text-sm text-gray-600"
+              class="text-sm text-gray-700"
             >Leave your website in good hands so you don't have to worry about managing a live server.</p>
           </div>
         </li>
       </ul>
 
       <p>
-        <g-link to="/services" class="button bg-green-700 text-green-100">Learn more</g-link>
+        <g-link to="/services" class="button bg-green-700 text-white">Learn more</g-link>
       </p>
     </div>
 
