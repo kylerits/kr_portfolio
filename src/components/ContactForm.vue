@@ -3,7 +3,7 @@
     <form
       name="contact"
       action="/thanks"
-      method="POST"
+      method="post"
       v-on:submit.prevent="handleSubmit"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -14,6 +14,7 @@
           <input name="bot-field" />
         </label>
       </p>
+      <input type="hidden" name="form-name" value="contact" />
       <p class="mb-6">
         <label
           for="name"
