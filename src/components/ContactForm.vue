@@ -4,8 +4,9 @@
       name="contact"
       action="/thanks"
       method="POST"
-      netlify-honeypot="bot-field"
+      v-on:submit.prevent="handleSubmit"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <p class="hidden">
         <label>
@@ -23,7 +24,9 @@
           name="name"
           class="block w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
           placeholder="John Doe"
+          v-model="formData.name"
           autocomplete="off"
+          required
         />
       </p>
       <p class="mb-6">
@@ -36,7 +39,9 @@
           name="email"
           class="block w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
           placeholder="johnd@example.com"
+          v-model="formData.email"
           autocomplete="off"
+          required
         />
       </p>
       <div class="mb-6">
@@ -50,6 +55,7 @@
           <select
             name="services"
             id="services"
+            v-model="formData.service"
             class="block w-full bg-transparent text-indigo-700 focus:outline-none"
           >
             <option value="Web Design">Web Design</option>
@@ -69,6 +75,7 @@
           name="message"
           class="block w-full bg-white rounded shadow border-green-200 border focus:outline-none focus:shadow-md px-5 py-2 text-base text-indigo-700"
           placeholder="I have a couple of questions..."
+          v-model="formData.message"
           autocomplete="off"
         ></textarea>
       </p>
@@ -78,6 +85,37 @@
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      formData: {}
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit(e) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          contact: e.target.getAttribute("name"),
+          ...this.formData
+        })
+      })
+        .then(() => this.$router.push("/thanks"))
+        .catch(error => alert(error));
+    }
+  }
+};
+</script>
 
 <style>
 input,
