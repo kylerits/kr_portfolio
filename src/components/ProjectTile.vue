@@ -69,7 +69,7 @@
         >Read More</g-link>
         <a
           :href="projectData.link"
-          class="button button-sm mr-3 tracking-wider text-white bg-red-600 hover:bg-red-700 mb-2"
+          class="button button-sm mr-3 tracking-wider text-white bg-red-700 hover:bg-red-800 mb-2"
         >View Now</a>
       </div>
     </div>
