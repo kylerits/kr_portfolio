@@ -8,20 +8,60 @@
       tag="nav"
       class="main-nav absolute right-0 font-bold flex flex-col items-end justify-around order-1 lg:order-2"
     >
-      <g-link to="/" class="nav-item" key="home" data-index="0" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Home</span>
+      <g-link
+        to="/"
+        class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
+        key="home"
+        data-index="0"
+        v-if="isVisible"
+      >
+        <span class="nav-text inline-block relative px-3">
+          <span class="inner-text">Home</span>
+        </span>
       </g-link>
-      <g-link to="/about" class="nav-item" key="about" data-index="1" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">About</span>
+      <g-link
+        to="/about"
+        class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
+        key="about"
+        data-index="1"
+        v-if="isVisible"
+      >
+        <span class="nav-text inline-block relative px-3">
+          <span class="inner-text">About</span>
+        </span>
       </g-link>
-      <g-link to="/projects" class="nav-item" key="projects" data-index="2" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Projects</span>
+      <g-link
+        to="/projects"
+        class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
+        key="projects"
+        data-index="2"
+        v-if="isVisible"
+      >
+        <span class="nav-text inline-block relative px-3">
+          <span class="inner-text">Projects</span>
+        </span>
       </g-link>
-      <g-link to="/services" class="nav-item" key="services" data-index="3" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Services</span>
+      <g-link
+        to="/services"
+        class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
+        key="services"
+        data-index="3"
+        v-if="isVisible"
+      >
+        <span class="nav-text inline-block relative px-3">
+          <span class="inner-text">Services</span>
+        </span>
       </g-link>
-      <g-link to="/contact" class="nav-item" key="contact" data-index="4" v-if="isVisible">
-        <span class="nav-text inline-block relative px-3">Contact</span>
+      <g-link
+        to="/contact"
+        class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
+        key="contact"
+        data-index="4"
+        v-if="isVisible"
+      >
+        <span class="nav-text inline-block relative px-3">
+          <span class="inner-text">Contact</span>
+        </span>
       </g-link>
     </transition-group>
     <button
@@ -77,17 +117,24 @@ export default {
 
 .nav-item > .nav-text::after {
   content: "";
-  @apply absolute border-indigo-700 border-b;
+  @apply absolute border-indigo-700 border-b-4;
   width: 12rem;
   top: 50%;
   left: 100%;
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .nav-item > .nav-text::before {
   content: "";
-  @apply absolute w-full h-full bg-indigo-500 opacity-75;
-  transform: translateX(-0.75rem) skewX(-20deg);
-  z-index: -1;
+  @apply absolute w-full h-full bg-indigo-500;
+  transform: translateX(-0.75rem) skewX(-20deg) scale(1.05);
+  z-index: 1;
+}
+
+.nav-item > .nav-text > .inner-text {
+  @apply relative;
+  z-index: 2;
 }
 
 @screen md {

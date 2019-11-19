@@ -31,7 +31,7 @@
 
 <script>
 import Hero from "~/components/HeroSmall";
-import ContactForm from "~/components/ContactForm";
+import ContactForm from "~/components/GetForm";
 
 import Blob from "~/assets/svgs/blob-static.svg";
 
