@@ -1,14 +1,7 @@
 <template>
   <div class="project relative w-full p-4 bg-green-600 rounded-lg shadow-xl overflow-hidden">
     <div class="project-bg absolute inset-0 w-full h-full rounded-lg overflow-hidden">
-      <slot name="cover">
-        <img
-          v-if="projectData.cover"
-          :src="projectData.cover"
-          class="object-center object-cover w-full h-full"
-          :alt="projectData.slug"
-        />
-      </slot>
+      <slot name="cover"></slot>
       <svg
         viewBox="0, 0, 100, 100"
         preserveAspectRatio="xMidYMin slice"
@@ -45,19 +38,14 @@
           <div
             class="project-thumbnail relative w-full h-full rounded-full bg-green-600 overflow-hidden"
           >
-            <slot name="logo">
-              <img
-                :src="projectData.logo"
-                class="object-center object-cover w-full h-full"
-                alt="woods"
-              />
-            </slot>
+            <slot name="logo"></slot>
           </div>
         </div>
       </div>
 
       <!-- Description Area -->
       <div class="project-desc-wrap mb-5">
+        {{ projectData.cover }}
         <p class="text-gray-700">{{ desc }}</p>
       </div>
 

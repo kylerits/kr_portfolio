@@ -3,18 +3,18 @@
     <form
       name="contact"
       action="/thanks"
-      method="post"
+      method="POST"
       v-on:submit.prevent="handleSubmit"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <p class="hidden">
         <label>
           Don’t fill this out if you're human:
           <input name="bot-field" />
         </label>
       </p>
-      <input type="hidden" name="form-name" value="contact" />
       <p class="mb-6">
         <label
           for="name"
@@ -107,7 +107,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          contact: e.target.getAttribute("name"),
+          "form-name": e.target.getAttribute("name"),
           ...this.formData
         })
       })
