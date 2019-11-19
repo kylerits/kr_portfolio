@@ -55,18 +55,18 @@
   query Projects ($path: String!) {
     project (path: $path) {
       id
-          title
-          path
-          slug
-          client
-          dateStart
-          dateEnd
-          excerpt
-          cover
-          screenshot
-          logo
-          link
-          content
+      title
+      path
+      slug
+      client
+      dateStart
+      dateEnd
+      excerpt
+      cover (width: 1800, blur: 10)
+      screenshot
+      logo
+      link
+      content
     }
   }
 </page-query>

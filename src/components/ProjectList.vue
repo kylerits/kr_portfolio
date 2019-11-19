@@ -39,7 +39,7 @@ query Projects {
           dateStart
           dateEnd
           excerpt
-          cover
+          cover (width: 330, height: 410, quality: 90)
           logo
           link
           content
