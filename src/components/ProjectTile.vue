@@ -45,7 +45,6 @@
 
       <!-- Description Area -->
       <div class="project-desc-wrap mb-5">
-        {{ projectData.cover }}
         <p class="text-gray-700">{{ desc }}</p>
       </div>
 
