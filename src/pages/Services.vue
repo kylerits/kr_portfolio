@@ -2,7 +2,7 @@
   <Layout>
     <article id="about">
       <hero>
-        <h1 class="text-6xl">Services.</h1>
+        <h1 class="text-indigo-900 text-6xl">Services.</h1>
         <p>I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community.</p>
       </hero>
 

@@ -5,9 +5,9 @@ dateEnd: 2019-02
 excerpt: "Through a collaborative effort of design and direction, I headed up the development of BIG's primary website. The project took full advantage of current web development technology, utilizing Vue for full PWA capabilities."
 slug: big
 client: Brand Innovation Group
-logo: "/images/project/big-brand.jpg"
-cover: "/images/project/universe2.jpg"
-screenshot: "/images/project/screencapture-gotobig.jpg"
+logo: "../../src/assets/images/project/big-brand.jpg"
+cover: "../../src/assets/images/project/universe2.jpg"
+screenshot: "../../src/assets/images/project/screencapture-gotobig.jpg"
 link: "https://www.gotobig.com/"
 ---
 

@@ -2,7 +2,7 @@
   <Layout>
     <article id="about">
       <hero>
-        <h1 class="text-6xl">Projects.</h1>
+        <h1 class="text-indigo-900 text-6xl">Projects.</h1>
         <p>
           Having worked as a web developer for the past 5 years I have built up a portfolio of projects that I am proud to have been a part of. If you have a project that you would like to collaborate on, feel free to
           <g-link to="/contact" class="mr-1">get in touch</g-link>.
@@ -19,7 +19,22 @@
               :key="node.id"
             >
               <div class="project-wrap px-3 lg:px-6 lg:mb-6">
-                <project-tile :projectData="node"></project-tile>
+                <project-tile :projectData="node">
+                  <template v-slot:cover>
+                    <g-image
+                      :src="node.cover"
+                      class="object-center object-cover w-full h-full"
+                      :alt="node.slug"
+                    />
+                  </template>
+                  <template v-slot:logo>
+                    <g-image
+                      :src="node.logo"
+                      class="object-center object-cover w-full h-full"
+                      :alt="node.title + ' Logo'"
+                    />
+                  </template>
+                </project-tile>
               </div>
             </div>
           </div>
@@ -30,7 +45,7 @@
 </template>
 
 <page-query>
-query Projects {
+query {
     allProject (sortBy: "dateEnd" order: DESC) {
       edges {
         node {
@@ -42,7 +57,7 @@ query Projects {
           dateStart
           dateEnd
           excerpt
-          cover
+          cover (width: 400, height: 600, fit: cover)
           logo
           link
           content

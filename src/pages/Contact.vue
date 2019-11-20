@@ -2,7 +2,7 @@
   <Layout>
     <article id="about">
       <hero>
-        <h1 class="text-6xl">Get in touch.</h1>
+        <h1 class="text-indigo-900 text-6xl">Get in touch.</h1>
       </hero>
       <section class="form-section relative py-8 lg:py-16">
         <div class="container mx-auto">
