@@ -57,7 +57,7 @@ query {
           dateStart
           dateEnd
           excerpt
-          cover (width: 400, height: 600, fit: cover)
+          cover
           logo
           link
           content
