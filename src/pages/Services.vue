@@ -205,6 +205,67 @@ export default {
         name: "description",
         content:
           "I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community."
+      },
+      // Open Graph
+      {
+        property: "og:title",
+        content: "Services. ← Kyle Rodgers"
+      },
+      { property: "og:site_name", content: "Kyle Rodgers Portfolio" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://kylerodgers.me/services"
+      },
+      {
+        property: "og:image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content:
+          "I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community."
+      },
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: "https://kylerodgers.me/services"
+      },
+      {
+        name: "twitter:title",
+        content: "Services. ← Kyle Rodgers"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community."
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "@kyle_rits" },
+      {
+        name: "twitter:image:src",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Google / Schema.org markup:
+      {
+        itemprop: "name",
+        content: "Services. ← Kyle Rodgers"
+      },
+      {
+        itemprop: "description",
+        content:
+          "I have a good deal of experience working on websites, from the simple to the hugely scalable. My goal is to use this platform to provide quality digital work for my community."
+      },
+      {
+        itemprop: "image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
       }
     ]
   },
