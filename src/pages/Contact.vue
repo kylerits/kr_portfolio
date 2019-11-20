@@ -42,6 +42,64 @@ export default {
       {
         name: "description",
         content: "Let me know if you have any questions."
+      },
+      // Open Graph
+      {
+        property: "og:title",
+        content: "Get in touch. ← Kyle Rodgers"
+      },
+      { property: "og:site_name", content: "Kyle Rodgers Portfolio" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://kylerodgers.me/contact"
+      },
+      {
+        property: "og:image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content: "Let me know if you have any questions."
+      },
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: "https://kylerodgers.me/contact"
+      },
+      {
+        name: "twitter:title",
+        content: "Get in touch. ← Kyle Rodgers"
+      },
+      {
+        name: "twitter:description",
+        content: "Let me know if you have any questions."
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "@kyle_rits" },
+      {
+        name: "twitter:image:src",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Google / Schema.org markup:
+      {
+        itemprop: "name",
+        content: "Get in touch. ← Kyle Rodgers"
+      },
+      {
+        itemprop: "description",
+        content: "Let me know if you have any questions."
+      },
+      {
+        itemprop: "image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
       }
     ]
   },

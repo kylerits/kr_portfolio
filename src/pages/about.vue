@@ -48,6 +48,67 @@ export default {
         name: "description",
         content:
           "I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume."
+      },
+      // Open Graph
+      {
+        property: "og:title",
+        content: "My story so far. ← Kyle Rodgers"
+      },
+      { property: "og:site_name", content: "Kyle Rodgers Portfolio" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://kylerodgers.me/about"
+      },
+      {
+        property: "og:image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content:
+          "I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume."
+      },
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: "https://kylerodgers.me/about"
+      },
+      {
+        name: "twitter:title",
+        content: "My story so far. ← Kyle Rodgers"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume."
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "@kyle_rits" },
+      {
+        name: "twitter:image:src",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
+      },
+      // Google / Schema.org markup:
+      {
+        itemprop: "name",
+        content: "My story so far. ← Kyle Rodgers"
+      },
+      {
+        itemprop: "description",
+        content:
+          "I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume."
+      },
+      {
+        itemprop: "image",
+        content:
+          "https://kylerodgers.me/assets/static/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.2665e34.f49e64e7789e5328dd0ad2cc37236ed8.jpg"
       }
     ]
   },
