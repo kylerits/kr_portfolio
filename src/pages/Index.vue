@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <hero>
-      <h1 class="text-4xl lg:text-5xl">
+      <h1 class="text-indigo-900 text-4xl lg:text-5xl">
         I am a web developer
         <br />based in Fort Wayne, Indiana.
       </h1>
@@ -56,6 +56,28 @@ export default {
         name: "description",
         content:
           "I have a passion for creating dynamic user experiences on the web."
+      },
+      {
+        name: "twitter:card",
+        content: "Fort Wayne based Web Developer"
+      },
+      {
+        name: "twitter:site",
+        content: "https://kylerodgers.me"
+      },
+      {
+        name: "twitter:title",
+        content: "Fort Wayne based Web Developer"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "I have a passion for creating dynamic user experiences on the web."
+      },
+      {
+        name: "twitter:image",
+        content:
+          "~/assets/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"
       }
     ]
   },

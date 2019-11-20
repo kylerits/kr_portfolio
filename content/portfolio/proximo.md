@@ -5,9 +5,9 @@ dateEnd: 2018-09
 excerpt: "This project was an online menu and reservation hub for the new Downtown Fort Wayne restaurant Proximo. Integrated with OpenTable's API, users can make reservation through the website, view delicious menu items, and purchase gift cards."
 slug: proximo
 client: Proximo
-logo: "/images/project/proximo-brand.jpg"
-cover: "/images/project/proximo-interior.jpeg"
-screenshot: "/images/project/proximo-screenshot.jpg"
+logo: "../../src/assets/images/project/proximo-brand.jpg"
+cover: "../../src/assets/images/project/proximo-interior.jpeg"
+screenshot: "../../src/assets/images/project/proximo-screenshot.jpg"
 link: "https://proximofw.com/"
 ---
 

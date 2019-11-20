@@ -11,7 +11,7 @@
           />
         </template>
         <template v-slot:content>
-          <h1 class="text-6xl">{{ $page.project.title }}</h1>
+          <h1 class="text-indigo-900 text-6xl">{{ $page.project.title }}</h1>
           <p class="text-lg mb-6">{{ $page.project.excerpt }}</p>
           <p>
             <a
@@ -62,7 +62,7 @@
       dateStart
       dateEnd
       excerpt
-      cover (width: 1800, blur: 10)
+      cover (width: 1800, height: 700)
       screenshot
       logo
       link

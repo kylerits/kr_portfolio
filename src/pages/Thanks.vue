@@ -2,7 +2,7 @@
   <Layout>
     <article id="thanks">
       <hero>
-        <h1 class="text-6xl">Thank you!</h1>
+        <h1 class="text-indigo-900 text-6xl">Thank you!</h1>
         <p>I will get back to you as soon as I am able.</p>
       </hero>
       <section class="form-section relative py-8 lg:py-16">

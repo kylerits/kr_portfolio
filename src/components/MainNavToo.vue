@@ -106,7 +106,7 @@ export default {
 }
 
 .nav-item {
-  @apply relative block text-lg text-indigo-900;
+  @apply relative block font-sans text-lg text-indigo-900;
   width: 8rem;
   transition: all 300ms;
 }
