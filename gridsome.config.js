@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Kyle Rodgers',
+  siteUrl: 'https://kylerodgers.me/',
   titleTemplate: '%s | Kyle Rodgers Portfolio',
   icon: {
     favicon: {
@@ -60,6 +61,18 @@ module.exports = {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-151944939-1'
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 60000, // default
+        config: {
+          '/projects/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          }
+        }
       }
     }
   ],
