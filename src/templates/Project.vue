@@ -77,6 +77,72 @@ import Hero from "../components/ProjectHero";
 export default {
   components: {
     Hero
+  },
+  metaInfo() {
+    return {
+      title: this.$page.project.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.project.excerpt
+        },
+        // Open Graph
+        {
+          property: "og:title",
+          content: this.$page.project.title + " ← Kyle Rodgers"
+        },
+        { property: "og:site_name", content: "Kyle Rodgers Portfolio" },
+        // The list of types is available here: http://ogp.me/#types
+        { property: "og:type", content: "website" },
+        // Should the the same as your canonical link, see below.
+        {
+          property: "og:url",
+          content: "https://kylerodgers.me/" + this.$page.project.slug
+        },
+        {
+          property: "og:image",
+          content: this.$page.project.cover
+        },
+        // Often the same as your meta description, but not always.
+        {
+          property: "og:description",
+          content: this.$page.project.excerpt
+        },
+        // Twitter card
+        { name: "twitter:card", content: "summary" },
+        {
+          name: "twitter:site",
+          content: "https://kylerodgers.me/" + this.$page.project.slug
+        },
+        {
+          name: "twitter:title",
+          content: this.$page.project.title + " ← Kyle Rodgers"
+        },
+        {
+          name: "twitter:description",
+          content: this.$page.project.excerpt
+        },
+        // Your twitter handle, if you have one.
+        { name: "twitter:creator", content: "@kyle_rits" },
+        {
+          name: "twitter:image:src",
+          content: this.$page.project.cover
+        },
+        // Google / Schema.org markup:
+        {
+          itemprop: "name",
+          content: this.$page.project.title + " ← Kyle Rodgers"
+        },
+        {
+          itemprop: "description",
+          content: this.$page.project.excerpt
+        },
+        {
+          itemprop: "image",
+          content: this.$page.project.cover
+        }
+      ]
+    };
   }
 };
 </script>
