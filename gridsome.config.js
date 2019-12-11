@@ -1,86 +1,86 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Kyle Rodgers',
-  siteUrl: 'https://kylerodgers.me/',
-  titleTemplate: '%s | Kyle Rodgers Portfolio',
+  siteName: "Kyle Rodgers",
+  siteUrl: "https://kylerodgers.me/",
+  titleTemplate: "%s | Kyle Rodgers Portfolio",
   icon: {
     favicon: {
-      src: './src/favicon/favicon-32x32.png',
-      sizes: [16, 32],
+      src: "./src/favicon/favicon-32x32.png",
+      sizes: [16, 32]
     },
     touchicon: {
-      src: './src/favicon/apple-touch-icon.png',
+      src: "./src/favicon/apple-touch-icon.png",
       sizes: [76, 152, 120, 167],
       precomposed: true
     }
   },
-  plugins: [{
-      use: 'gridsome-plugin-tailwindcss',
+  plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss",
       options: {
-        tailwindConfig: './tailwind.config.js',
+        tailwindConfig: "./tailwind.config.js",
         purgeConfig: {},
         presetEnvConfig: {},
         shouldPurge: true,
         shouldImport: true,
         shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true,
+        shouldPurgeUnusedKeyframes: true
       }
     },
     {
-      use: 'gridsome-plugin-purgecss'
+      use: "gridsome-plugin-purgecss"
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'content/portfolio/*.md',
-        typeName: 'Project',
-        route: '/:slug'
+        path: "content/portfolio/*.md",
+        typeName: "Project",
+        route: "/:slug"
       }
     },
     {
-      use: 'gridsome-plugin-pwa',
+      use: "gridsome-plugin-pwa",
       options: {
-        title: 'Kyle Rodgers Portfolio',
-        startUrl: '/',
-        display: 'standalone',
-        statusBarStyle: 'default',
-        manifestPath: 'manifest.json',
-        serviceWorkerPath: 'service-worker.js',
-        shortName: 'KR Portfolio',
-        themeColor: '#3B4A4D',
-        backgroundColor: '#ffffff',
-        icon: 'static/favicon.png' // must be supplied!
+        title: "Kyle Rodgers Portfolio",
+        startUrl: "/",
+        display: "standalone",
+        statusBarStyle: "default",
+        manifestPath: "manifest.json",
+        serviceWorkerPath: "service-worker.js",
+        shortName: "KR Portfolio",
+        themeColor: "#3B4A4D",
+        backgroundColor: "#ffffff",
+        icon: "static/favicon.png" // must be supplied!
       }
     },
     {
-      use: '@gridsome/plugin-google-analytics',
+      use: "@gridsome/plugin-google-analytics",
       options: {
-        id: 'UA-151944939-1'
+        id: "UA-151944939-1"
       }
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: "@gridsome/plugin-sitemap",
       options: {
         cacheTime: 60000, // default
         config: {
-          '/projects/*': {
-            changefreq: 'weekly',
+          "/projects/*": {
+            changefreq: "weekly",
             priority: 0.5
           }
         }
       }
-    }
+    },
+    "gridsome-plugin-robots-txt"
   ],
   chainWebpack: config => {
-    const svgRule = config.module.rule('svg')
-    svgRule.uses.clear()
-    svgRule
-      .use('vue-svg-loader')
-      .loader('vue-svg-loader')
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   }
 };
