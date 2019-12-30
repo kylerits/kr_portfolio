@@ -17,8 +17,12 @@
             <a
               :href="$page.project.link"
               target="_blank"
-              class="button bg-red-600 text-red-100"
+              class="button bg-red-600 text-red-100 mr-2 mb-2"
             >Visit the site</a>
+            <g-link
+              to="/projects"
+              class="button bg-green-700 text-green-100 mr-2 mb-2"
+            >Back to Projects</g-link>
           </p>
         </template>
       </hero>
@@ -33,14 +37,14 @@
           <div class="info lg:w-1/3">
             <a
               :href="$page.project.link"
-              class="screenshot-wrap block overflow-scroll rounded-lg lg:-mt-24 mb-6 shadow-md"
+              class="screenshot-wrap relative block overflow-scroll rounded-lg lg:-mt-24 shadow-md"
               style="height: 18rem;"
               target="_blank"
             >
               <g-image
                 v-if="$page.project.screenshot"
                 :src="$page.project.screenshot"
-                class="relative block max-w-full h-auto"
+                class="relative block max-w-full h-auto z-0"
                 :alt="$page.project.title + ' Screenshot'"
               ></g-image>
             </a>
