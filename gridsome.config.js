@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Kyle Rodgers",
-  siteUrl: "https://kylerodgers.me/",
-  titleTemplate: "%s | Kyle Rodgers Portfolio",
+  siteName: "Expert at Web Design",
+  siteUrl: "https://expertatwebdesign.com/",
+  titleTemplate: "%s | Kyle Rodger's Portfolio",
   icon: {
     favicon: {
       src: "./src/favicon/favicon-32x32.png",
@@ -46,7 +46,7 @@ module.exports = {
     {
       use: "gridsome-plugin-pwa",
       options: {
-        title: "Kyle Rodgers Portfolio",
+        title: "Expert at Web Design",
         startUrl: "/",
         display: "standalone",
         statusBarStyle: "default",
