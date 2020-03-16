@@ -16,7 +16,7 @@
           </div>
           <div class="relative inline-block">
             <g-link
-              to="/services#web-design"
+              to="/services#web-design/"
               class="title-link block font-sans text-lg mb-1"
             >Web Design</g-link>
             <p
@@ -32,7 +32,7 @@
           </div>
           <div class="relative inline-block">
             <g-link
-              to="/services#static-web-development"
+              to="/services#static-web-development/"
               class="title-link block font-sans text-lg mb-1"
             >Static Web Development</g-link>
             <p
@@ -48,7 +48,7 @@
           </div>
           <div class="relative inline-block">
             <g-link
-              to="/services#cms-integration"
+              to="/services#cms-integration/"
               class="title-link block font-sans text-lg mb-1"
             >CMS Integration</g-link>
             <p
@@ -64,7 +64,7 @@
           </div>
           <div class="relative inline-block">
             <g-link
-              to="/services#web-management"
+              to="/services#web-management/"
               class="title-link font-sans text-lg mb-1"
             >Web Management</g-link>
             <p
@@ -75,7 +75,7 @@
       </ul>
 
       <p>
-        <g-link to="/services" class="button bg-green-700 text-white">Learn more</g-link>
+        <g-link to="/services/" class="button bg-green-700 text-white">Learn more</g-link>
       </p>
     </div>
 

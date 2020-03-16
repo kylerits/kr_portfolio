@@ -20,7 +20,7 @@
               class="button bg-red-600 text-red-100 mr-2 mb-2"
             >Visit the site</a>
             <g-link
-              to="/projects"
+              to="/projects/"
               class="button bg-green-700 text-green-100 mr-2 mb-2"
             >Back to Projects</g-link>
           </p>
@@ -31,7 +31,7 @@
           <div class="content-wrap lg:w-2/3 lg:pr-12 mb-12">
             <div class="content mb-6" v-html="$page.project.content"></div>
             <p>
-              <g-link to="/projects" class="button bg-green-700 text-green-100">Back to Projects</g-link>
+              <g-link to="/projects/" class="button bg-green-700 text-green-100">Back to Projects</g-link>
             </p>
           </div>
           <div class="info lg:w-1/3">

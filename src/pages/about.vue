@@ -21,8 +21,8 @@
             <p>Feeling a need to further grow professionally, I branched out and was hired by Brand Innovation Group where I currently reside. In the brief couple of years that I have been with Big I have learned tremendously. Working in an agency setting certainly gives you a broad array of different challenges that require creative and scalable solutions.</p>
 
             <p>
-              Still I feel a need to grow professionally, so I am using my spare time to work on freelance projects. I hope to offer my services as well as my experience as a professional web develop to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume. If there is anything I can help you with digitally, feel free to
-              <g-link to="/contact">get in touch.</g-link>
+              Still I feel a need to grow professionally, so I am using my spare time to work on freelance projects. I hope to offer my services as well as my experience as a professional web developer to help individuals and small businesses that are looking for quality work without an entire agency attached to it and the costs that would assume. If there is anything I can help you with digitally, feel free to
+              <g-link to="/contact/">get in touch.</g-link>
             </p>
           </div>
 

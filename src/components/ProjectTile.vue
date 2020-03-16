@@ -51,7 +51,7 @@
       <!-- Links -->
       <div class="project-links">
         <g-link
-          :to="projectData.path"
+          :to="`${projectData.path}/`"
           class="button button-sm mr-3 text-white bg-indigo-700 hover:bg-indigo-800 mb-2"
         >Read More</g-link>
         <a

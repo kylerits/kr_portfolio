@@ -15,16 +15,16 @@
       <g-link to="/" class="nav-item" key="home" data-index="0" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">Home</span>
       </g-link>
-      <g-link to="/about" class="nav-item" key="about" data-index="1" v-if="isVisible">
+      <g-link to="/about/" class="nav-item" key="about" data-index="1" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">About</span>
       </g-link>
-      <g-link to="/projects" class="nav-item" key="projects" data-index="2" v-if="isVisible">
+      <g-link to="/projects/" class="nav-item" key="projects" data-index="2" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">Projects</span>
       </g-link>
-      <g-link to="/services" class="nav-item" key="services" data-index="3" v-if="isVisible">
+      <g-link to="/services/" class="nav-item" key="services" data-index="3" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">Services</span>
       </g-link>
-      <g-link to="/contact" class="nav-item" key="contact" data-index="4" v-if="isVisible">
+      <g-link to="/contact/" class="nav-item" key="contact" data-index="4" v-if="isVisible">
         <span class="nav-text inline-block relative px-3">Contact</span>
       </g-link>
     </transition-group>

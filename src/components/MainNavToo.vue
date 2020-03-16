@@ -20,7 +20,7 @@
         </span>
       </g-link>
       <g-link
-        to="/about"
+        to="/about/"
         class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
         key="about"
         data-index="1"
@@ -31,7 +31,7 @@
         </span>
       </g-link>
       <g-link
-        to="/projects"
+        to="/projects/"
         class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
         key="projects"
         data-index="2"
@@ -42,7 +42,7 @@
         </span>
       </g-link>
       <g-link
-        to="/services"
+        to="/services/"
         class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
         key="services"
         data-index="3"
@@ -53,7 +53,7 @@
         </span>
       </g-link>
       <g-link
-        to="/contact"
+        to="/contact/"
         class="nav-item bg-white shadow-lg rounded-l-full overflow-hidden"
         key="contact"
         data-index="4"
