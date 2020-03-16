@@ -12,9 +12,5 @@ module.exports = function (api) {
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
-    createPage({
-      path: '/about',
-      component: './src/pages/About.vue'
-    })
   })
 }
