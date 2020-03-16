@@ -5,7 +5,7 @@
         <h1 class="text-indigo-900 text-6xl">Projects.</h1>
         <p>
           Having worked as a web developer for the past 5 years I have built up a portfolio of projects that I am proud to have been a part of. If you have a project that you would like to collaborate on, feel free to
-          <g-link to="/contact" class="mr-1">get in touch</g-link>.
+          <g-link to="/contact/" class="mr-1">get in touch</g-link>.
         </p>
       </hero>
 
